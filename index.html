@@ -3,182 +3,289 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Innovation</title>
+  <title>Innovation Data Entry</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; line-height: 1.6; }
+    h3 { color: #2c3e50; border-left: 5px solid #3498db; padding-left: 10px; margin-top: 30px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 10px; background-color: #fff; }
+    th, td { border: 1px solid #bdc3c7; padding: 12px; text-align: left; }
+    th { background-color: #ecf0f1; font-weight: bold; }
+    
+    /* Button Styling */
+    .btn { padding: 6px 12px; cursor: pointer; border: none; border-radius: 4px; font-weight: bold; margin-right: 5px; }
+    .add-btn { background-color: #27ae60; color: white; }
+    .delete-btn { background-color: #e74c3c; color: white; }
+    .add-btn:hover { background-color: #2ecc71; }
+    .delete-btn:hover { background-color: #c0392b; }
+    
+    /* Editable Cell Styling */
+    td[contenteditable="true"] { background-color: #f9f9f9; border: 1px dashed #3498db; }
+    td[contenteditable="true"]:focus { outline: 2px solid #3498db; background-color: #fff; }
+  </style>
 </head>
 <body>
-<h3>Startups Recognised by DPIIT / Startup India</h3>
-<table border="1" cellpadding="8" cellspacing="0">
-<thead>
-<tr>
-<th>Name of Venture</th>
-<th>Year of Recognition by DPIIT / Startup India</th>
-<th>DPIIT / Startup India Registration No.</th>
-</tr>
-</thead>
-<tbody>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
-</tbody>
-</table>
-<br>
-<h3>Startups which have got VC investment in previous 3 Years</h3>
-<table border="1" cellpadding="8" cellspacing="0">
-<thead>
-<tr>
-<th>Name of startups</th>
-<th>DPIIT No.</th>
-<th>Amount received</th>
-<th>Organisation Name</th>
-<th>Year of receiving VC investment</th>
-<th>Achievement Level</th>
-<th>Type of Investment</th>
-</tr>
-</thead>
-<tbody>
-<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-</tbody>
-</table>  
-<br>
-<h3>Seed Funding</h3>
-<table border="1" cellpadding="8" cellspacing="0">
-<tr>
-<th>Name of Startup</th>
-<th>DPIIT No.</th>
-<th>Seed funding received(in Rupees)</th>
-<th>Name of Government Organization providing Seed Funding</th>
-<th>Year of Receiving the Fund</th>
-<th>Achievement Level</th>
-<th>Type of Investment</th>
-</tr>
-</thead>
-<tbody>
-<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-</tbody>
-</table>
-<br>
-<h3>FDI investment in previous 3 years</h3>
-<table border="1" cellpadding="8" cellspacing="0">
-<tr>
-<th>Name of startups</th>
-<th>DPIIT No.</th>
-<th>FDI investment received(in Rupees)</th>
-<th>Organization Name</th>
-<th>Year of receiving FDI investment</th>
-<th>Achievement Level</th>
-<th>Type of Investment</th>
-</tr>
-</thead>
-<tbody>
-<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-</tbody>
-</table>
-<br>
-<h3>Innovation grant received from govt. organization in previous 3 years</h3>
-<table border="1" cellpadding="8" cellspacing="0">
-<tr>
-<th>Name of Government organisation from which grant is received</th>
-<th>Name of the Program or Scheme</th>
-<th>Amount of Grant received</th>
-<th>Year of receiving grant</th>
-</tr>
-</thead>
-<tbody>
-<tr><td></td><td></td><td></td><td></tr>
-<tr><td></td><td></td><td></td><td></tr>
-</tbody>
-</table>
-<br>
-<h3>Patents</h3>
-<table border="1" cellpadding="8" cellspacing="0">
-<tr>
-<th>Calendar year</th>
-<th>2024</th>
-<th>2023</th>
-<th>2022</th>
-</tr>
-</thead>
-<tbody>
-<tr><td></td><td></td><td></td><td></tr>
-<tr><td></td><td></td><td></td><td></tr>
-</tbody>
-</table>
-<br>
-<h3>Patents Commercialized & Technology Transferred</h3>
-<table border="1" cellpadding="8" cellspacing="0">
-<tr>
-<th>Calendar year</th>
-<th>2024</th>
-<th>2023</th>
-<th>2022</th>
-</tr>
-</thead>
-<tbody>
-<tr><td></td><td></td><td></td><td></tr>
-<tr><td></td><td></td><td></td><td></tr>
-</tbody>
-</table>
-<br>
-<h3>Innovations at various stages of Technology Readiness Level</h3>
-<table border="1" cellpadding="8" cellspacing="0">
-<tr>
-<th>Name of the Start-up</th>
-<th>DPIIT No.</th>
-<th>Innovation Name</th>
-<th>Stage of technology</th>
-</tr>
-</thead>
-<tbody>
-<tr><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td><td></td></tr>
-</tbody>
-</table>
-<br>
-<h3>Ventures/startups grown to turnover of 50 lacs</h3>
-<table border="1" cellpadding="8" cellspacing="0">
-<tr>
-<th>Name of the Start-ups</th>
-<th>DPIIT No.</th>
-<th>Company's Turnover</th>
-</tr>
-</thead>
-<tbody>
-<tr><td></td><td></td><td></td></tr>
-</tbody>
-</table>
+
+  <h1>Innovation Data Capturing System</h1>
+  <p>Click "Add" to create a new entry. You can type directly into the boxes.</p>
+
+  <h3>Startups Recognised by DPIIT / Startup India</h3>
+  <table id="table1">
+    <thead>
+      <tr>
+        <th>Name of Venture</th>
+        <th>Year of Recognition by DPIIT / Startup India</th>
+        <th>DPIIT / Startup India Registration No.</th>
+        <th width="150">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td>
+          <button class="btn add-btn" onclick="addRow('table1')">Add</button>
+          <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Startups which have got VC investment in previous 3 Years</h3>
+  <table id="table2">
+    <thead>
+      <tr>
+        <th>Name of startups</th>
+        <th>DPIIT No.</th>
+        <th>Amount received</th>
+        <th>Organisation Name</th>
+        <th>Year of VC receiving investment</th>
+        <th>Achievement Level</th>
+        <th>Type of Investment</th>
+        <th width="150">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td>
+          <button class="btn add-btn" onclick="addRow('table2')">Add</button>
+          <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Seed Funding</h3>
+  <table id="table3">
+    <thead>
+      <tr>
+        <th>Name of Startup</th>
+        <th>DPIIT No.</th>
+        <th>Seed funding received(in Rupees)</th>
+        <th>Name of Government Organization providing Seed Funding</th>
+        <th>Year of Receiving the Fund</th>
+        <th>Achievement Level</th>
+        <th>Type of Investment</th>
+        <th width="150">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td>
+          <button class="btn add-btn" onclick="addRow('table3')">Add</button>
+          <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>FDI investment in previous 3 years</h3>
+  <table id="table4">
+    <thead>
+      <tr>
+        <th>Name of startups</th>
+        <th>DPIIT No.</th>
+        <th>FDI investment received(in Rupees)</th>
+        <th>Organization Name</th>
+        <th>Year of receiving FDI investment</th>
+        <th>Achievement Level</th>
+        <th>Type of Investment</th>
+        <th width="150">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td>
+          <button class="btn add-btn" onclick="addRow('table4')">Add</button>
+          <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Innovation grant received from govt. organization in previous 3 years</h3>
+  <table id="table5">
+    <thead>
+      <tr>
+        <th>Name of Government organisation from which grant is received</th>
+        <th>Name of the Program or Scheme</th>
+        <th>Amount of Grant received</th>
+        <th>Year of receiving grant</th>
+        <th width="150">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td>
+          <button class="btn add-btn" onclick="addRow('table5')">Add</button>
+          <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Patents</h3>
+  <table id="table6">
+    <thead>
+      <tr>
+        <th>Calendar year</th>
+        <th>2024</th>
+        <th>2023</th>
+        <th>2022</th>
+        <th width="150">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td>
+          <button class="btn add-btn" onclick="addRow('table6')">Add</button>
+          <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Innovations at various stages of Technology Readiness Level</h3>
+  <table id="table7">
+    <thead>
+      <tr>
+        <th>Name of the Start-up</th>
+        <th>DPIIT No.</th>
+        <th>Innovation Name</th>
+        <th>Stage of technology</th>
+        <th width="150">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td>
+          <button class="btn add-btn" onclick="addRow('table7')">Add</button>
+          <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Ventures/startups grown to turnover of 50 lacs</h3>
+  <table id="table8">
+    <thead>
+      <tr>
+        <th>Name of the Start-ups</th>
+        <th>DPIIT No.</th>
+        <th>Company's Turnover</th>
+        <th width="150">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td>
+          <button class="btn add-btn" onclick="addRow('table8')">Add</button>
+          <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    // Function to add a new row to a specific table
+    function addRow(tableId) {
+      const table = document.getElementById(tableId).getElementsByTagName('tbody')[0];
+      const firstRow = table.rows[0];
+      const newRow = table.insertRow();
+
+      // Create cells based on the number of columns in the header (minus the action column)
+      const colCount = document.getElementById(tableId).rows[0].cells.length;
+
+      for (let i = 0; i < colCount; i++) {
+        const newCell = newRow.insertCell(i);
+        
+        if (i === colCount - 1) {
+          // Add the Action buttons to the last cell
+          newCell.innerHTML = `
+            <button class="btn add-btn" onclick="addRow('${tableId}')">Add</button>
+            <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+          `;
+        } else {
+          // Make the data cells editable
+          newCell.contentEditable = "true";
+        }
+      }
+    }
+
+    // Function to delete the specific row
+    function deleteRow(button) {
+      const row = button.parentNode.parentNode;
+      const tableBody = row.parentNode;
+      
+      // Prevent deleting the very last remaining row if you want to keep the input available
+      if (tableBody.rows.length > 1) {
+        tableBody.deleteRow(row.rowIndex - 1);
+      } else {
+        // Just clear the content if it's the last row
+        const cells = row.getElementsByTagName('td');
+        for (let i = 0; i < cells.length - 1; i++) {
+          cells[i].innerText = "";
+        }
+        alert("Cannot delete the last row. Content cleared instead.");
+      }
+    }
+  </script>
+
 </body>
 </html>
