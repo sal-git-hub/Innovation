@@ -11,14 +11,12 @@
     th, td { border: 1px solid #bdc3c7; padding: 12px; text-align: left; }
     th { background-color: #ecf0f1; font-weight: bold; }
     
-    /* Button Styling */
     .btn { padding: 6px 12px; cursor: pointer; border: none; border-radius: 4px; font-weight: bold; margin-right: 5px; }
     .add-btn { background-color: #27ae60; color: white; }
     .delete-btn { background-color: #e74c3c; color: white; }
     .add-btn:hover { background-color: #2ecc71; }
     .delete-btn:hover { background-color: #c0392b; }
-    
-    /* Editable Cell Styling */
+  
     td[contenteditable="true"] { background-color: #f9f9f9; border: 1px dashed #3498db; }
     td[contenteditable="true"]:focus { outline: 2px solid #3498db; background-color: #fff; }
   </style>
@@ -243,41 +241,39 @@
   </table>
 
   <script>
-    // Function to add a new row to a specific table
+    
     function addRow(tableId) {
       const table = document.getElementById(tableId).getElementsByTagName('tbody')[0];
       const firstRow = table.rows[0];
       const newRow = table.insertRow();
 
-      // Create cells based on the number of columns in the header (minus the action column)
+      
       const colCount = document.getElementById(tableId).rows[0].cells.length;
 
       for (let i = 0; i < colCount; i++) {
         const newCell = newRow.insertCell(i);
         
         if (i === colCount - 1) {
-          // Add the Action buttons to the last cell
+          
           newCell.innerHTML = `
             <button class="btn add-btn" onclick="addRow('${tableId}')">Add</button>
             <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
           `;
         } else {
-          // Make the data cells editable
+        
           newCell.contentEditable = "true";
         }
       }
     }
-
-    // Function to delete the specific row
+    
     function deleteRow(button) {
       const row = button.parentNode.parentNode;
       const tableBody = row.parentNode;
-      
-      // Prevent deleting the very last remaining row if you want to keep the input available
+            
       if (tableBody.rows.length > 1) {
         tableBody.deleteRow(row.rowIndex - 1);
       } else {
-        // Just clear the content if it's the last row
+        
         const cells = row.getElementsByTagName('td');
         for (let i = 0; i < cells.length - 1; i++) {
           cells[i].innerText = "";
@@ -286,6 +282,5 @@
       }
     }
   </script>
-
 </body>
 </html>
